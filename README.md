@@ -2,8 +2,8 @@
 place to do hands on training for github
 ## branch model
 ![](http://i.imgur.com/2IvTlOb.png)
-
 <!--
+
 ## github training
 
 ##### sprint 1 dev
@@ -53,9 +53,9 @@ place to do hands on training for github
 5. create `Pull Request` to review & merge into `release` branch.
 6. manully deploy the build artifact `package.zip` to `staging` environment. QA test on staging.
 7. QA signoff the fix, trigger the deploy to prod.
-8. Cherry-pick the commit from `release` branch to develop branch by running command line: `git cherry-pick xxxxxx`. xxxxx is the commit hash.
-  If you have merging conflict, fix the issue and contine cherry-pick: `git cherry-pick --continue`
-9. commit & push the merge result to remote origin `develop` branch.
+8. Cherry-pick the commit from `release` branch to develop branch by running command line: `git cherry-pick xxxxxx`. xxxxx is the commit hash in 6 digits.
+9. If you have merging conflict, fix the issue and contine cherry-pick: run commandline `git add .` then `git cherry-pick --continue -m 'commit message'`
+10. commit & push the merge result to remote origin `develop` branch.
 
 ##### sprint 2 dev
 1. get the latest code from remote `develop` branch.
@@ -70,4 +70,5 @@ place to do hands on training for github
 8. create a `Pull request` from `sprint2-task#032` to `develop` on github.com web site, with `Assigness` user 1.
 9. user 1 go to click `Merge Pull Request` on github.com; or click `Update from sprint2-task#003` on Github desktop app.
 10. Delete branch `sprint2-task#003`.
+
 -->
