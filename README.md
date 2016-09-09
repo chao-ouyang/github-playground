@@ -2,7 +2,7 @@
 place to do hands on training for github
 ## branch model
 ![](http://i.imgur.com/2IvTlOb.png)
-<!--
+
 
 ## github training
 
@@ -71,4 +71,3 @@ place to do hands on training for github
 9. user 1 go to click `Merge Pull Request` on github.com; or click `Update from sprint2-task#003` on Github desktop app.
 10. Delete branch `sprint2-task#003`.
 
--->
