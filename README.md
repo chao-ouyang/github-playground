@@ -4,6 +4,18 @@ place to do hands on training for github
 ![](http://i.imgur.com/2IvTlOb.png)
 
 
+## git cheat sheet
+1. `git status` to check status
+2. `git checkout` to switch to branch
+3. `git checkout -b xxxx` to create & checkout new branch based on current working branch.
+4. `git add .` to add all changes to stage
+5. `git commit -m 'xxxxx'` commit staged changes to local repo with comment
+6. `git push -u origin xxxxx` push local commits to remote origin repo
+8. `git pull --rebase` to get the latest code with rebase.
+9. `git rebase develop` to rebase from develop branch to current working branch (feature branch).
+10. `git log --pretty=format:"%h %s" --graph --since=2.weeks` print out git history log with graph within 2 weeks
+
+
 ## github training
 
 ##### sprint 1 dev
