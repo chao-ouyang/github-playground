@@ -14,6 +14,7 @@ place to do hands on training for github
 8. `git pull --rebase` to get the latest code with rebase.
 9. `git rebase develop` to rebase from develop branch to current working branch (feature branch).
 10. `git log --pretty=format:"%h %s" --graph --since=2.weeks` print out git history log with graph within 2 weeks
+11. `git stash` save the current none commited changes, so that be able to switch to other branch.
 
 
 ## github training
