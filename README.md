@@ -14,6 +14,7 @@ place to do hands on training for github
 * `git commit -m 'xxxxx'` commit staged changes to local repo with comment
 * `git push -u origin xxxxx` push local commits to remote origin repo
 * `git pull --rebase` to get the latest code with rebase.
+* `git rebase --continue` when has pull.rebase conflict, resolve the conflict by editing the file, `git add .` then `git rebase --continue`
 * `git rebase develop` to rebase from develop branch to current working branch (feature branch).
 * `git log --oneline --graph --color --since=2.weeks` print out git history log with graph within 2 weeks
 * `git stash` save the current none commited changes, so that be able to switch to other branch.
