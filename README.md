@@ -5,16 +5,25 @@ place to do hands on training for github
 
 
 ## git cheat sheet
-1. `git status` to check status
-2. `git checkout` to switch to branch
-3. `git checkout -b xxxx` to create & checkout new branch based on current working branch.
-4. `git add .` to add all changes to stage
-5. `git commit -m 'xxxxx'` commit staged changes to local repo with comment
-6. `git push -u origin xxxxx` push local commits to remote origin repo
-8. `git pull --rebase` to get the latest code with rebase.
-9. `git rebase develop` to rebase from develop branch to current working branch (feature branch).
-10. `git log --pretty=format:"%h %s" --graph --since=2.weeks` print out git history log with graph within 2 weeks
-11. `git stash` save the current none commited changes, so that be able to switch to other branch.
+##### commands
+* `git status` to check status
+* `git checkout` to switch to branch
+* `git checkout -b xxxx` to create & checkout new branch based on current working branch.
+* `git add .` to add all changes to stage
+* `git commit -m 'xxxxx'` commit staged changes to local repo with comment
+* `git push -u origin xxxxx` push local commits to remote origin repo
+* `git pull --rebase` to get the latest code with rebase.
+* `git rebase develop` to rebase from develop branch to current working branch (feature branch).
+* `git log --oneline --graph --color --since=2.weeks` print out git history log with graph within 2 weeks
+* `git stash` save the current none commited changes, so that be able to switch to other branch.
+* `git cheery-pick xxxxxx` & `git cherry-pick --continue -m 'commit message'`, xxxxxx is 6 digit SHA1 commit hash, if there merge conflict, user the `--continue` to commit the merge result.
+* 
+
+##### config
+* `git config --global core.autocrlf true` for windows users
+* `git config --global core.autocrlf input` for mac users
+* `git config --global pull.rebase true` alwasy rebase when doing pull
+* `git config --global push.default simple` make sure branch name matchs.
 
 
 ## github training
