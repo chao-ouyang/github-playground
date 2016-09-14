@@ -6,7 +6,8 @@ place to do hands on training for github
 
 ## git cheat sheet
 ##### commands
-* `git status` to check status
+* `git status` to check local status
+* `git remote update` to bring remote status up to date
 * `git checkout` to switch to branch
 * `git checkout -b xxxx` to create & checkout new branch based on current working branch.
 * `git add .` to add all changes to stage
