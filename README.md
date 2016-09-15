@@ -3,7 +3,32 @@ place to do hands on training for github
 ## branch model
 ![](http://i.imgur.com/2IvTlOb.png)
 
+
+## git cheat sheet
+##### commands
+* `git status` to check local status
+* `git remote update` to bring remote status up to date
+* `git checkout` to switch to branch
+* `git checkout -b xxxx` to create & checkout new branch based on current working branch.
+* `git add .` to add all changes to stage
+* `git commit -m 'xxxxx'` commit staged changes to local repo with comment
+* `git push -u origin xxxxx` push local commits to remote origin repo
+* `git pull --rebase` to get the latest code with rebase.
+* `git rebase --continue` when has pull.rebase conflict, go resolve the conflict by editing the file, then `git add .` and this     
+* `git rebase develop` to rebase from develop branch to current working branch (feature branch).
+* `git log --oneline --graph --color --since=2.weeks` print out git history log with graph within 2 weeks
+* `git stash` save the current none commited changes, so that be able to switch to other branch.
+* `git cheery-pick xxxxxx` & `git cherry-pick --continue -m 'commit message'`, xxxxxx is 6 digit SHA1 commit hash, if there merge conflict, user the `--continue` to commit the merge result.
+* 
+
+##### config
+* `git config --global core.autocrlf true` for windows users
+* `git config --global core.autocrlf input` for mac users
+* `git config --global pull.rebase true` alwasy rebase when doing pull
+* `git config --global push.default simple` make sure branch name matchs.
+
 <!--
+
 ## github training
 
 ##### sprint 1 dev
@@ -53,9 +78,9 @@ place to do hands on training for github
 5. create `Pull Request` to review & merge into `release` branch.
 6. manully deploy the build artifact `package.zip` to `staging` environment. QA test on staging.
 7. QA signoff the fix, trigger the deploy to prod.
-8. Cherry-pick the commit from `release` branch to develop branch by running command line: `git cherry-pick xxxxxx`. xxxxx is the commit hash.
-  If you have merging conflict, fix the issue and contine cherry-pick: `git cherry-pick --continue`
-9. commit & push the merge result to remote origin `develop` branch.
+8. Cherry-pick the commit from `release` branch to develop branch by running command line: `git cherry-pick xxxxxx`. xxxxx is the commit hash in 6 digits.
+9. If you have merging conflict, fix the issue and contine cherry-pick: run commandline `git add .` then `git cherry-pick --continue -m 'commit message'`
+10. commit & push the merge result to remote origin `develop` branch.
 
 ##### sprint 2 dev
 1. get the latest code from remote `develop` branch.
@@ -70,4 +95,5 @@ place to do hands on training for github
 8. create a `Pull request` from `sprint2-task#032` to `develop` on github.com web site, with `Assigness` user 1.
 9. user 1 go to click `Merge Pull Request` on github.com; or click `Update from sprint2-task#003` on Github desktop app.
 10. Delete branch `sprint2-task#003`.
+
 -->
