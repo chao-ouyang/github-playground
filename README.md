@@ -27,6 +27,7 @@ place to do hands on training for github
 * `git config --global pull.rebase true` alwasy rebase when doing pull
 * `git config --global push.default simple` make sure branch name matchs.
 
+<!--
 
 ## github training
 
@@ -95,3 +96,4 @@ place to do hands on training for github
 9. user 1 go to click `Merge Pull Request` on github.com; or click `Update from sprint2-task#003` on Github desktop app.
 10. Delete branch `sprint2-task#003`.
 
+-->
